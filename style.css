@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #000C23;
+    font-family: "Robot",sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.container{
+    margin-bottom: 200px;
+}
+
+.başlık,.y_başlık{
+    color: #8D8D8D;
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+.y_başlık{
+    font-size: 20px;
+}
+.ekleme{
+    position: relative;
+    height: 50px;
+}
+.text{
+    font-size: 18px;
+    background-color: black;
+    color: white;
+    border: 0;
+    padding: 15px;
+    height: 30px;
+    width: 30px;
+    transition: width .4s linear;
+    border-radius: 10px;
+    outline: none;
+}
+.btn{
+    border: 0;
+    cursor: pointer;
+    font-size: 30px;
+    height: 30px;
+    width: 30px;
+    position: absolute;
+    top: 0;
+    left: 0px;
+    background-color: black;
+    transition: transform .4s linear;
+    color: white;
+    outline: none;
+}
+
+.ekleme.aktif .text{
+    width: 500px;
+}
+
+.ekleme.aktif .btn{
+    transform: translateX(500px);
+}
+
+.görevList{
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    margin-bottom: 13px;
+}
+
+.text2{
+    background-color: #111827;
+    height: 30px;
+    width: 500px;
+    border-radius: 10px;
+    outline: none;
+    padding: 10px;
+    color: white;
+    font-size: 15px;
+    border: 0;
+}
+
+#düzenle, #sil{
+    background-color: transparent;
+    color: #B753B9;
+    outline: none;
+    border: 0;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: bold;
+    padding-left: 10px;
+    z-index: 1;
+    position: absolute;
+    left: 360px;
+    top: 5px;
+}
+
+#sil{
+    left: 450px;
+    color: rgb(255, 0, 0);
+}
+
+.checked{
+    text-decoration: line-through;
+    color: gray;
+}
